@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.trannh08.ad006services">
+    package="com.example.trannh08.ad006services"
+    android:versionCode="1"
+    android:versionName="@string/app_name">
 
     <application
         android:allowBackup="true"
@@ -11,10 +13,12 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--DO NOT FOR GET ADDING SERVICE TAG-->
+        <service android:name=".utils.MyService" />
     </application>
 
 </manifest>
